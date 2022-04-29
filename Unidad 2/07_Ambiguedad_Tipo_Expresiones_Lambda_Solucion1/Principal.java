@@ -3,17 +3,17 @@ public class Principal {
 	public static void main(String[] args) {
 
 		// Solucion 1
-		Principal.engine((CalculadoraInt)( x, y) -> x + y);
-		Principal.engine((CalculadoraInt)( x, y) -> x * y);
-		Principal.engine((CalculadoraInt)( x, y) -> x / y);
-		Principal.engine((CalculadoraInt)( x, y) -> x - y);
-		Principal.engine((CalculadoraInt)( x, y) -> x % y);
+		Principal.engine((int x,int y) -> x + y);
+		Principal.engine((int x,int y) -> x * y);
+		Principal.engine((int x,int y) -> x / y);
+		Principal.engine((int x,int y) -> x - y);
+		Principal.engine((int x,int y) -> x % y); 
 
-		Principal.engine((CalculadoraLong)( x, y) ->  (int)(x + y));
-		Principal.engine((CalculadoraLong)( x, y) ->  (int)(x * y));
-		Principal.engine((CalculadoraLong)( x, y) ->  (int)(x / y));
-		Principal.engine((CalculadoraLong)( x, y) ->  (int)(x - y));
-		Principal.engine((CalculadoraLong)( x, y) ->  (int)(x % y));
+		Principal.engine((long x,long y) -> (int) x + (int) y);
+		Principal.engine((long x,long y) -> (int) x * (int) y);
+		Principal.engine((long x,long y) -> (int) x / (int) y);
+		Principal.engine((long x,long y) -> (int) x - (int) y);
+		Principal.engine((long x,long y) -> (int) x % (int) y); 
 
 		System.out.println("\n");
 
